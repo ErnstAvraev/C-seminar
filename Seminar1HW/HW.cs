@@ -60,19 +60,19 @@
 // }
 
 // Задача 8
-Console.WriteLine("Введите число ");
-int N = Convert.ToInt32(Console.ReadLine());
-int i = 0;
+// Console.WriteLine("Введите число ");
+// int N = Convert.ToInt32(Console.ReadLine());
+// int i = 0;
 
-if (N%2!=0) 
-{   while (i<N-1){
-    i+=2;
-    Console.WriteLine(i);
-}
-}
-else {
-    while (i<N) {
-        i+=2;
-        Console.WriteLine(i);
-}
-}
+// if (N%2!=0) 
+// {   while (i<N-1){
+//     i+=2;
+//     Console.WriteLine(i);
+// }
+// }
+// else {
+//     while (i<N) {
+//         i+=2;
+//         Console.WriteLine(i);
+// }
+// }
