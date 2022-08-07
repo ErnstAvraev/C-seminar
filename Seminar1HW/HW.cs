@@ -3,10 +3,12 @@
 // int a = Convert.ToInt32(Console.ReadLine());
 // Console.WriteLine("Введите число b: " );
 // int b = Convert.ToInt32(Console.ReadLine());
+
 // int a = new Random().Next(1, 100);
 // Console.WriteLine("Число а = " + a);
 // int b = new Random().Next(1, 100);
 // Console.WriteLine("Число b = "+ b);
+
 // int max = 0;
 
 // if (a > b) {
@@ -59,4 +61,18 @@
 
 // Задача 8
 Console.WriteLine("Введите число ");
-int N = Convert.ToInt32(Console.ReadLine()):
+int N = Convert.ToInt32(Console.ReadLine());
+int i = 0;
+
+if (N%2!=0) 
+{   while (i<N-1){
+    i+=2;
+    Console.WriteLine(i);
+}
+}
+else {
+    while (i<N) {
+        i+=2;
+        Console.WriteLine(i);
+}
+}
