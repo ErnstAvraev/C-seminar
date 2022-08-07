@@ -52,6 +52,9 @@
 // Console.WriteLine("Введите число ");
 // int a = Convert.ToInt32(Console.ReadLine());
 
+// int a = new Random().Next(1, 100);
+// Console.WriteLine("Число a = " + a);
+
 // if (a%2!=0){
 //     Console.WriteLine("Число нечетное");
 // }
@@ -63,20 +66,20 @@
 // Console.WriteLine("Введите число ");
 // int N = Convert.ToInt32(Console.ReadLine());
 
-int N = new Random().Next(1, 100);
-Console.WriteLine("Число N = " +N);
+// int N = new Random().Next(1, 100);
+// Console.WriteLine("Число N = " + N);
 
-int i = 0;
+// int i = 0;
 
-if (N%2!=0) 
-{   while (i<N-1){
-    i+=2;
-    Console.WriteLine(i);
-}
-}
-else {
-    while (i<N) {
-        i+=2;
-        Console.WriteLine(i);
-}
-}
+// if (N%2!=0) 
+// {   while (i<N-1){
+//     i+=2;
+//     Console.WriteLine(i);
+// }
+// }
+// else {
+//     while (i<N) {
+//         i+=2;
+//         Console.WriteLine(i);
+// }
+// }
