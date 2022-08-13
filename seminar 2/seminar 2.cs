@@ -97,3 +97,25 @@
 // {
 //     Console.WriteLine("числа не являются квадратами друг друга");
 // }
+
+// Доп задание 1
+
+// int a = new Random().Next(19, 100);
+// Console.WriteLine(a);
+// Console.WriteLine("введите число d");
+// int d = Convert.ToInt32(Console.ReadLine());
+
+// if (a % d == 0)
+// {
+//     Console.WriteLine("Делится без остатка");
+// }
+// else
+// {
+//     Console.WriteLine("Не делится без остатка");
+// }
+
+// д/з
+// задача 1
+int number = new Random().Next(100, 1000);
+Console.WriteLine(number);
+Console.Write($"{number%100*1/10}");
