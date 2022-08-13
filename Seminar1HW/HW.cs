@@ -24,12 +24,12 @@
 // }
 
 // Задача 4
-Console.WriteLine("Введите число a: ");
-int a = Convert.ToInt32(Console.ReadLine());
-Console.WriteLine("Введите число b: ");
-int b = Convert.ToInt32(Console.ReadLine());
-Console.WriteLine("Введите число c: ");
-int c = Convert.ToInt32(Console.ReadLine());
+// Console.WriteLine("Введите число a: ");
+// int a = Convert.ToInt32(Console.ReadLine());
+// Console.WriteLine("Введите число b: ");
+// int b = Convert.ToInt32(Console.ReadLine());
+// Console.WriteLine("Введите число c: ");
+// int c = Convert.ToInt32(Console.ReadLine());
 
 // int a = new Random().Next(1, 100);
 // Console.WriteLine("Число а = " + a);
@@ -38,36 +38,46 @@ int c = Convert.ToInt32(Console.ReadLine());
 // int c = new Random().Next(1, 100);
 // Console.WriteLine("Число c = " + c);
 
-int max = 0;
+// int max = 0;
 
-if (a > max)
-{
-    max = a;
-}
-if (b > max)
-{
-    max = b;
-}
-if (c > max)
-{
-    max = c;
-}
-Console.WriteLine($"Максимальное число = {max}");
+// if (a > max)
+// {
+//     max = a;
+// }
+// if (b > max)
+// {
+//     max = b;
+// }
+// if (c > max)
+// {
+//     max = c;
+// }
+// Console.WriteLine($"Максимальное число = {max}");
 
 // Задача 6
 
-// Console.WriteLine("Введите число ");
-// int a = Convert.ToInt32(Console.ReadLine());
+Console.WriteLine("Введите число ");
+int a = Convert.ToInt32(Console.ReadLine());
 
 // int a = new Random().Next(1, 100);
 // Console.WriteLine("Число a = " + a);
 
-// if (a%2!=0){
-//     Console.WriteLine("Число нечетное");
-// }
-// else {
+// if (a % 2 == 0)
+// {
 //     Console.WriteLine("Число четное");
 // }
+// else
+// {
+//     Console.WriteLine("Число нечетное");
+// }
+if (a % 2 != 0)
+{
+    Console.WriteLine("Число нечетное");
+}
+else
+{
+    Console.WriteLine("Число четное");
+}
 
 // Задача 8
 // Console.WriteLine("Введите число ");
