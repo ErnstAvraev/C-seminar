@@ -41,24 +41,49 @@
 
 // Задача 14
 
-Console.WriteLine("Введите число a");
-int a = Convert.ToInt32(Console.ReadLine());
+// Console.WriteLine("Введите число a");
+// int a = Convert.ToInt32(Console.ReadLine());
 
 // int a = new Random().Next(1, 1000);
 // Console.WriteLine(a);
 
-if (a % 7 == 0)
-{
-    if (a % 23 == 0)
-    {
-        Console.WriteLine("да");
-    }
-    else
-    {
-        Console.WriteLine("нет");
-    }
-}
-else
-{
-    Console.WriteLine("нет");
-}
+// if (a % 7 == 0)
+// {
+//     if (a % 23 == 0)
+//     {
+//         Console.WriteLine("да");
+//     }
+//     else
+//     {
+//         Console.WriteLine("нет");
+//     }
+// }
+// else
+// {
+//     Console.WriteLine("нет");
+// }
+
+// Задача 16
+
+// Console.WriteLine("Введите число a ");
+// int a = Convert.ToInt32(Console.ReadLine());
+// Console.WriteLine("Введите число b ");
+// int b = Convert.ToInt32(Console.ReadLine());
+
+// int a = new Random().Next(1, 1001);
+// Console.WriteLine(a);
+// int b = new Random().Next(1, 1001);
+// Console.WriteLine(b);
+
+// if (a * a == b)
+// {
+//     Console.WriteLine("второе число является квадратом первого");
+// }
+// else if (b * b == a)
+// {
+//     Console.WriteLine("первое число является квадратом второго");
+// }
+// else
+// {
+//     Console.WriteLine("числа не являются квадратами друг друга");
+// }
