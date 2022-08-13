@@ -1,23 +1,27 @@
 ﻿// Задача 2
-// Console.WriteLine("Введите число a: ");
-// int a = Convert.ToInt32(Console.ReadLine());
-// Console.WriteLine("Введите число b: " );
-// int b = Convert.ToInt32(Console.ReadLine());
+Console.WriteLine("Введите число a: ");
+int number1 = Convert.ToInt32(Console.ReadLine());
+Console.WriteLine("Введите число b: " );
+int number2 = Convert.ToInt32(Console.ReadLine());
 
 // int a = new Random().Next(1, 100);
 // Console.WriteLine("Число а = " + a);
 // int b = new Random().Next(1, 100);
 // Console.WriteLine("Число b = "+ b);
 
-// int max = 0;
 
-// if (a > b) {
-//     max = a;
-// }
-// else {
-//     max = b;
-// }
-// Console.WriteLine("Максимальное число равно " + max);
+if (number1 > number2) 
+{
+    Console.WriteLine("a больше b");
+}
+else if (number1 < number2)
+{
+    Console.WriteLine("b больше a");
+}
+else 
+{
+    Console.WriteLine("a равно b");
+}
 
 // Задача 4
 // Console.WriteLine("Введите число a: ");
