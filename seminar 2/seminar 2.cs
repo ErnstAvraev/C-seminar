@@ -47,6 +47,16 @@
 // int a = new Random().Next(1, 1000);
 // Console.WriteLine(a);
 
+// решение из группы
+
+// if ((a % 7 == 0) && (a % 23 == 0))
+// {
+//     Console.WriteLine($"да");
+// }
+// else
+// {
+//     Console.WriteLine($"нет");
+// }
 // if (a % 7 == 0)
 // {
 //     if (a % 23 == 0)
