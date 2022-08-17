@@ -12,18 +12,51 @@
 
 // number = Math.Abs(number);
 
-// if (number<100)
+// if (number < 100)
 // {
 //     Console.WriteLine("Нет третьего числа");
 // }
-// else 
+// else
 // {
-//     while (number>=1000)
+//     while (number >= 1000)
 //     {
 //         number /= 10;
 //     }
-//     int trd = number%10;
+//     int trd = number % 10;
 //     Console.WriteLine(trd);
+// }
+
+// Второе решение
+
+// Console.Write("Введите число: ");
+// int num = int.Parse(Console.ReadLine());
+// if (num < 100);
+// {
+//     Console.WriteLine($"Третьей цифры нет");
+// }
+// int thirdNumber = num % 10;
+// Console.WriteLine($"Третья цифра числа {num} -> {thirdNumber}");
+
+// еще одно 
+
+// Console.WriteLine("Введите число: ");
+// int num = Convert.ToInt32(Console.ReadLine());
+// if (num < 0)
+// {
+//     num = num * -1;
+// }
+// if (num > 0 && num < 100)
+// {
+//     Console.WriteLine("Третьей цифры нет");
+// }
+// else
+// {
+//     while (num > 999)
+//     {
+//         num = num / 10;
+//     }
+//     int thirdNum = num % 10;
+//     Console.WriteLine($"Третья цифра -> {thirdNum}");
 // }
 
 // Задача 15
