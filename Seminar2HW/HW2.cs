@@ -59,6 +59,60 @@
 //     Console.WriteLine($"Третья цифра -> {thirdNum}");
 // }
 
+// Решение Михаила
+
+// int num = Convert.ToInt32(Console.ReadLine());
+// int n = num;
+// int i = 0;
+// int numA = 0;
+// int numB = 0;
+
+// while (num > 0)
+// {
+//     i++;
+//     num /= 10;
+// }
+// Console.WriteLine($"Количество цифр введенного числа: {i}");
+
+// int k = Convert.ToInt32(Math.Pow(10, i - 3));
+
+// if (n < 100)
+// {
+//     Console.WriteLine("Третьей цифры нет");
+// }
+// else
+// {
+//     numA = n / k;
+//     numB = numA % 10;
+//     Console.WriteLine($"Третья цифра введенного числа: {numB}");
+// }
+
+// Решение с длинной числа
+
+// Console.WriteLine("Введите число: ");
+// string number = Console.ReadLine();
+// long num;
+// bool isnum = long.TryParse(number, out num);
+
+// if (isnum)
+// {
+//     if (number[0] == '-' && number.Length == 3 || (number[0] != '-' && number.Length == 2))
+//     {
+//         Console.WriteLine("Третьей цифры нет");
+//     }
+// else if (number[0] == '-')
+//     {
+//         Console.WriteLine(number[3]);
+//     }
+// else
+//     {
+//         Console.WriteLine(number[2]);
+//     }
+// }
+// else
+// {
+//     Console.WriteLine("Введены не цифры");
+// }
 // Задача 15
 // Console.WriteLine("Введите цифру");
 // int a = Convert.ToInt32(Console.ReadLine());
