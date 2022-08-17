@@ -87,7 +87,7 @@
 //     Console.WriteLine($"Третья цифра введенного числа: {numB}");
 // }
 
-// Решение с длинной числа
+// Решение с длинной числа и индексом
 
 // Console.WriteLine("Введите число: ");
 // string number = Console.ReadLine();
@@ -129,3 +129,38 @@
 // {
 //     Console.WriteLine("Не день недели");
 // }
+
+// решение Елены
+// Console.Clear();
+// Console.Write("Введите число: ");
+// int num = int.Parse(Console.ReadLine());
+// if (num > 7 || num < 1)
+// {
+//     Console.WriteLine("Неверный день недели");
+// }
+// if (num > 5)
+// {
+//     Console.WriteLine("Да");
+// }
+// else 
+// {
+//     Console.WriteLine("Нет");
+// }
+
+// Решение Дениса
+Console.Write($"Введите цифру соответствующую дню недели: ");
+int day = Convert.ToInt32(Console.ReadLine());
+
+int result = day % 7;
+
+switch (result)
+{
+    case 1: Console.Write($"{day} является понедельником"); break;
+    case 2: Console.Write($"{day} является вторником"); break;
+    case 3: Console.Write($"{day} является средой"); break;
+    case 4: Console.Write($"{day} является четвергом"); break;
+    case 5: Console.Write($"{day} является пятницей"); break;
+    case 6: Console.Write($"{day} является субботним выходным"); break;
+    case 0: Console.Write($"{day} является воскресным выходным"); break;
+    default: break;
+}
