@@ -72,5 +72,5 @@ void cube(int num)
 }
 
 Console.WriteLine("Введите число N: ");
-int N = Convert.ToInt32(Console.ReadLine());
+int N = Math.Abs(Convert.ToInt32(Console.ReadLine()));
 cube(N);
