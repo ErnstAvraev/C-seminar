@@ -24,6 +24,7 @@
 //     }
 // }
 
+// Console.Clear();
 // Console.WriteLine("Введите 5-ти значное число: ");
 // int a = Convert.ToInt32(Console.ReadLine());
 // palindrom(a);
@@ -63,14 +64,15 @@
 // // 3 -> 1, 8, 27
 // // 5 -> 1, 8, 27, 64, 125
 
-void cube(int num)
-{
-    for (int i = 1; i <= num; i++)
-    {
-        Console.Write($"{Math.Pow(i, 3)} ");
-    }
-}
+// Console.Clear ();
+// void cube(int num)
+// {
+//     for (int i = 1; i <= num; i++)
+//     {
+//         Console.Write($"{Math.Pow(i, 3)} ");
+//     }
+// }
 
-Console.WriteLine("Введите число N: ");
-int N = Math.Abs(Convert.ToInt32(Console.ReadLine()));
-cube(N);
+// Console.WriteLine("Введите число N: ");
+// int N = Math.Abs(Convert.ToInt32(Console.ReadLine()));
+// cube(N);
