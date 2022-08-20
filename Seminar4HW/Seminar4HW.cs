@@ -25,7 +25,7 @@
 // // 9012 -> 12
 
 
-// int ammountNum(int a)
+// int ammountNum(int a) //Считаем количество разрядов
 // {
 //     int i = 0;
 //     while (a > 0)
