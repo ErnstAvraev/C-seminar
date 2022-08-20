@@ -33,29 +33,29 @@
 // // A (3,6,8); B (2,1,-7), -> 15.84
 // // A (7,-5, 0); B (1,-1,9) -> 11.53
 
-double segmentLength(int a, int b, int c, int d, int e, int f)
-{
-    double length = Math.Round(Math.Sqrt(Math.Pow((a - d), 2) + Math.Pow((b - e), 2) + Math.Pow((c - f), 2)), 2);
-    return length;
-}
+// double segmentLength(int a, int b, int c, int d, int e, int f)
+// {
+//     double length = Math.Round(Math.Sqrt(Math.Pow((a - d), 2) + Math.Pow((b - e), 2) + Math.Pow((c - f), 2)), 2);
+//     return length;
+// }
 
-Console.Clear();
-Console.WriteLine("Введите координаты X1: ");
-int x1 = Convert.ToInt32(Console.ReadLine());
-Console.WriteLine("Введите координаты Y1: ");
-int y1 = Convert.ToInt32(Console.ReadLine());
-Console.WriteLine("Введите координаты Z1: ");
-int z1 = Convert.ToInt32(Console.ReadLine());
+// Console.Clear();
+// Console.WriteLine("Введите координаты X1: ");
+// int x1 = Convert.ToInt32(Console.ReadLine());
+// Console.WriteLine("Введите координаты Y1: ");
+// int y1 = Convert.ToInt32(Console.ReadLine());
+// Console.WriteLine("Введите координаты Z1: ");
+// int z1 = Convert.ToInt32(Console.ReadLine());
 
-Console.WriteLine("Введите координаты X2: ");
-int x2 = Convert.ToInt32(Console.ReadLine());
-Console.WriteLine("Введите координаты Y2: ");
-int y2 = Convert.ToInt32(Console.ReadLine());
-Console.WriteLine("Введите координаты Z2: ");
-int z2 = Convert.ToInt32(Console.ReadLine());
+// Console.WriteLine("Введите координаты X2: ");
+// int x2 = Convert.ToInt32(Console.ReadLine());
+// Console.WriteLine("Введите координаты Y2: ");
+// int y2 = Convert.ToInt32(Console.ReadLine());
+// Console.WriteLine("Введите координаты Z2: ");
+// int z2 = Convert.ToInt32(Console.ReadLine());
 
-double length = segmentLength(x1, y1, z1, x2, y2, z2);
-Console.WriteLine($"Расстояние между точками: {length}");
+// double length = segmentLength(x1, y1, z1, x2, y2, z2);
+// Console.WriteLine($"Расстояние между точками: {length}");
 
 
 // // Задача 23
@@ -63,16 +63,14 @@ Console.WriteLine($"Расстояние между точками: {length}");
 // // 3 -> 1, 8, 27
 // // 5 -> 1, 8, 27, 64, 125
 
-// void cube(int num)
-// {
-//     int count = 1;
-//     while (count <= num)
-//     {
-//         Console.Write($"{Math.Pow(count, 3)} ");
-//         count++;
-//     }
-// }
+void cube(int num)
+{
+    for (int i = 1; i <= num; i++)
+    {
+        Console.Write($"{Math.Pow(i, 3)} ");
+    }
+}
 
-// Console.WriteLine("Введите число N: ");
-// int N = Convert.ToInt32(Console.ReadLine());
-// cube(N);
+Console.WriteLine("Введите число N: ");
+int N = Convert.ToInt32(Console.ReadLine());
+cube(N);
