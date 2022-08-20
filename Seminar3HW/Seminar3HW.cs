@@ -1,8 +1,8 @@
-﻿// // Задача 19
-// // Напишите программу, которая принимает на вход пятизначное число и проверяет, является ли оно палиндромом.
-// // 14212 -> нет
-// // 12821 -> да
-// // 23432 -> да
+﻿// // // Задача 19
+// // // Напишите программу, которая принимает на вход пятизначное число и проверяет, является ли оно палиндромом.
+// // // 14212 -> нет
+// // // 12821 -> да
+// // // 23432 -> да
 
 // void palindrom(int x)
 // {
@@ -33,28 +33,29 @@
 // // A (3,6,8); B (2,1,-7), -> 15.84
 // // A (7,-5, 0); B (1,-1,9) -> 11.53
 
-// double segmentLength(int a, int b, int c, int d, int e, int f)
-// {
-//     double length = Math.Sqrt((a - d) * (a - d) + (b - e) * (b - e) + (c - f) * (c - f));
-//     return length;
-// }
+double segmentLength(int a, int b, int c, int d, int e, int f)
+{
+    double length = Math.Round(Math.Sqrt(Math.Pow((a - d), 2) + Math.Pow((b - e), 2) + Math.Pow((c - f), 2)), 2);
+    return length;
+}
 
-// Console.Clear();
-// Console.WriteLine("Введите координаты X1: ");
-// int x1 = Convert.ToInt32(Console.ReadLine());
-// Console.WriteLine("Введите координаты Y1: ");
-// int y1 = Convert.ToInt32(Console.ReadLine());
-// Console.WriteLine("Введите координаты Z1: ");
-// int z1 = Convert.ToInt32(Console.ReadLine());
-// Console.WriteLine("Введите координаты X2: ");
-// int x2 = Convert.ToInt32(Console.ReadLine());
-// Console.WriteLine("Введите координаты Y2: ");
-// int y2 = Convert.ToInt32(Console.ReadLine());
-// Console.WriteLine("Введите координаты Z2: ");
-// int z2 = Convert.ToInt32(Console.ReadLine());
+Console.Clear();
+Console.WriteLine("Введите координаты X1: ");
+int x1 = Convert.ToInt32(Console.ReadLine());
+Console.WriteLine("Введите координаты Y1: ");
+int y1 = Convert.ToInt32(Console.ReadLine());
+Console.WriteLine("Введите координаты Z1: ");
+int z1 = Convert.ToInt32(Console.ReadLine());
 
-// double length = segmentLength(x1, y1, z1, x2, y2, z2);
-// Console.WriteLine($"Расстояние между точками: {length}");
+Console.WriteLine("Введите координаты X2: ");
+int x2 = Convert.ToInt32(Console.ReadLine());
+Console.WriteLine("Введите координаты Y2: ");
+int y2 = Convert.ToInt32(Console.ReadLine());
+Console.WriteLine("Введите координаты Z2: ");
+int z2 = Convert.ToInt32(Console.ReadLine());
+
+double length = segmentLength(x1, y1, z1, x2, y2, z2);
+Console.WriteLine($"Расстояние между точками: {length}");
 
 
 // // Задача 23
