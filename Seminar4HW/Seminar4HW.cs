@@ -18,6 +18,29 @@
 // power(a,b);
 
 
+// Еще одно решение от Елены
+
+
+Console.Clear();
+Console.WriteLine("Введите число: ");
+int A = int.Parse(Console.ReadLine());
+Console.WriteLine("Введите степень: ");
+int B = int.Parse(Console.ReadLine());
+
+Console.WriteLine($"{A} в степени {B} = {Pow(A, B)}");
+
+int Pow(int num, int rank)
+{
+    if (B == 0) return 1;
+
+    int result = num;
+    for (int i = 2; i <= rank; i++)
+    {
+        result *= num;
+    }
+    return result;
+}
+
 
 // // Задача 27: Напишите программу, которая принимает на вход число и выдаёт сумму цифр в числе.
 // // 452 -> 11
@@ -42,7 +65,7 @@
 // int result = 0;
 // int[] arr = new int[ammountNum(num)];
 
-// for (int i = 0; i != arr.Length; i++) // записываем значения в массив
+// for (int i = 0; i != arr.Length; i++) // записываем значения в массив 
 // {
 //     res %= 10;
 //     num /= 10;
