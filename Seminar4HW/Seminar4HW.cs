@@ -4,18 +4,18 @@
 // // 2, 4 -> 16
 
 
-void power(double num1, double num2)
-{
-    double result = Math.Pow(num1, num2);
-    Console.WriteLine(result);
-}
+// void power(double num1, double num2)
+// {
+//     double result = Math.Pow(num1, num2);
+//     Console.WriteLine(result);
+// }
 
-Console.Clear ();
-Console.WriteLine("Введите число A: ");
-double a = Convert.ToDouble(Console.ReadLine());
-Console.WriteLine("Введите число B: ");
-double b = Convert.ToDouble(Console.ReadLine());
-power(a,b);
+// Console.Clear ();
+// Console.WriteLine("Введите число A: ");
+// double a = Convert.ToDouble(Console.ReadLine());
+// Console.WriteLine("Введите число B: ");
+// double b = Convert.ToDouble(Console.ReadLine());
+// power(a,b);
 
 
 // Еще одно решение от Елены
@@ -31,7 +31,7 @@ power(a,b);
 
 // int Pow(int num, int rank)
 // {
-//     if (B == 0) return 1;
+//     if (rank == 0) return 1;
 
 //     int result = num;
 //     for (int i = 2; i <= rank; i++)
