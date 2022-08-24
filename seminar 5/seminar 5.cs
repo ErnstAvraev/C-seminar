@@ -255,3 +255,54 @@
 // Результат запишите в новом массиве.
 // Пример: [1 2 3 4 5] -> [5 8 3]
 //         [6 7 3 6] -> [36 21]
+
+// int[] CreateRandomArray(int size, int min, int max)
+// {
+//     int[] array = new int[size];
+//     for (int i = 0; i < size; i++)
+//     {
+//         array[i] = new Random().Next(min, max + 1);
+//     }
+//     return array;
+// }
+
+// void ShowArray(int[] array)
+// {
+//     for (int i = 0; i < array.Length; i++)
+//     {
+//         Console.Write(array[i] + ", ");
+//     }
+//     Console.WriteLine();
+// }
+
+// Console.Clear();
+// int[] myArray = CreateRandomArray(9, -10, 11);
+// ShowArray(myArray);
+
+// int size = myArray.Length;
+// int i = 0;
+// int mult = 0;
+// int k = size - 1;
+
+// if (size % 2 == 0)
+// {
+//     while (i < size / 2)
+//     {
+//         mult = myArray[i] * myArray[k];
+//         i++;
+//         k--;
+//         Console.Write($"{mult}, ");
+//     }
+
+// }
+// if (size % 2 != 0)
+// {
+//     while (i < size / 2)
+//     {
+//         mult = myArray[i] * myArray[k];
+//         i++;
+//         k--;
+        
+//         Console.Write($"{mult}, ");
+//     }
+// }
