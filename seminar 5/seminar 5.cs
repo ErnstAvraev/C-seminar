@@ -130,3 +130,128 @@
 // }
 
 // Console.WriteLine($"Сумма положительных: {sum_pos}. Сумма отрицательных: {sum_neg}");
+
+// Console.WriteLine($"{myArray[11]} {myArray[1]}");
+
+
+// Задача 32.
+// Напишите программу замены элементов массива: положительные на отрицательные и наоборот.
+// Пример: [-4,-8,8,2] -> [4,8,-8,-2]
+
+// int[] CreateRandomArray(int size, int min, int max)
+// {
+//     int[] array = new int[size];
+//     for (int i = 0; i < size; i++)
+//     {
+//         array[i] = new Random().Next(min, max + 1);
+//     }
+//     return array;
+// }
+
+// void ShowArray(int[] array)
+// {
+//     for (int i = 0; i < array.Length; i++)
+//     {
+//         Console.Write(array[i] + ", ");
+//     }
+//     Console.WriteLine();
+// }
+// int[] myArray=CreateRandomArray(20,-100,101);
+// ShowArray(myArray);
+
+// for (int i = 0; i < myArray.Length; i++)
+// {
+//     myArray[i]*=-1;
+// }
+// Console.WriteLine($"{String.Join(", ",myArray)}");
+
+// Задача 33.
+// Задайте массив. Напишите программу, которая определяет, присутствует ли заданное число в массиве.
+// Пример: 4; массив [6,7,19,345,3] -> нет
+//         3; массив [6,7,19,345,3] -> да
+
+// int[] CreateRandomArray(int size, int min, int max)
+// {
+//     int[] array = new int[size];
+//     for (int i = 0; i < size; i++)
+//     {
+//         array[i] = new Random().Next(min, max + 1);
+//     }
+//     return array;
+// }
+
+// void ShowArray(int[] array)
+// {
+//     for (int i = 0; i < array.Length; i++)
+//     {
+//         Console.Write(array[i] + ", ");
+//     }
+//     Console.WriteLine();
+// }
+
+// Console.Clear();
+// int[] myArray = CreateRandomArray(20, -100, 101);
+// ShowArray(myArray);
+
+// Console.WriteLine("Введите число: ");
+// int num = Convert.ToInt32(Console.ReadLine());
+
+// bool numInArray(int[] array, int num)
+// {
+//     for (int i = 0; i < array.Length; i++)
+//     {
+//         if (array[i] == num)
+//         {
+//             return true;
+//         }
+//     }
+//     return false;
+// }
+
+// Console.WriteLine($"Это число есть в массиве? -> {numInArray(myArray, num)}");
+
+// Задача 35: Задайте одномерный массив из 123 случайных чисел.
+// Найдите количество элементов массива, значения которых лежат в отрезке [10,99].
+// Пример: [5,18,123,6,2] -> 1
+//         [1,2,3,6,2] -> 0
+//         [10,11,12,13,14] -> 5
+
+int[] CreateRandomArray(int size, int min, int max)
+{
+    int[] array = new int[size];
+    for (int i = 0; i < size; i++)
+    {
+        array[i] = new Random().Next(min, max + 1);
+    }
+    return array;
+}
+
+void ShowArray(int[] array)
+{
+    for (int i = 0; i < array.Length; i++)
+    {
+        Console.Write(array[i] + ", ");
+    }
+    Console.WriteLine();
+}
+
+Console.Clear();
+int[] myArray = CreateRandomArray(123, -100, 101);
+ShowArray(myArray);
+
+int count = 0;
+for (int i = 0; i < myArray.Length; i++)
+{
+
+    if (myArray[i] >= 10 && myArray[i] <= 99)
+    {
+        count++;
+    }
+}
+Console.WriteLine($"Количество цифр лежащих в заданном диапазоне = {count}");
+
+// Задача 37: Найдите произведение пар чисел в одномерном массиве.
+// Парой считаем первый и последний элемент, второй и предпоследний и тд.
+// Результат запишите в новом массиве.
+// Пример: [1 2 3 4 5] -> [5 8 3]
+//         [6 7 3 6] -> [36 21]
