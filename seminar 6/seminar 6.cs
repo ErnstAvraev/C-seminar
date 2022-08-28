@@ -76,23 +76,45 @@
 
 // Binary(num);
 
-// string DecimalToBinary(int input)
-// {
-//     var result = string.Empty;
+// // Еще одно решение
 
-//     while (input / 2 > 0)
-//     {
-//         result += 
-//     }
-//     return result;
-// }
+string DecimalToBinary(int input)
+{
+    var result = string.Empty;
+    var devider = 2;
 
-// Console.WriteLine("Введите десятичное число: ");
-// if (int.TryParse(Console.ReadLine()!, out var number))
-// {
-//     Console.WriteLine("Все плохо");
-// }
+    int resultLength = 1;
+    int temp = input;
 
-// var result = DecimalToBinary(number);
+    while (temp / devider > 0)
+    {
+        resultLength++;
+        temp /= devider;
+    }
 
-// Console.WriteLine("Двоичное представление числа " + number + "есть число " + result);
+    int[] resultArray = new int[resultLength];
+
+    int index = resultLength - 1;
+
+    while (index >= 0)
+    {
+        resultArray[index] += input % devider;
+        index--;
+        input /= devider;
+    }
+
+    for (int i = 0; i < resultArray.Length; i++)
+    {
+        result += resultArray[i];
+    }
+    return result;
+}
+
+
+Console.WriteLine("Введите десятичное число: ");
+int number = int.Parse(Console.ReadLine()!);
+
+
+var result = DecimalToBinary(number);
+
+Console.WriteLine("Двоичное представление числа " + number + " есть число " + result);
